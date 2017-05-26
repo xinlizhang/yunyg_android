@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<color name="filter_text_color">#000000</color>
+    <color name="spec_text_color">#999999</color>
+    <color name="spec_select_text_color">#ff0000</color>
+	<color name="gray_line_color">#cccccc</color>
+	<color name="activity_bg">#ffffff</color>
+    
+	<color name="b0_home_hot_divider_color">#afafaf</color>
+	<color name="b0_home_hot_divider_bg_color">#eff3f6</color>
+	<color name="b0_home_hot_divider_layout_color">#d6d7d9</color>
+	<color name="b0_home_hot_type_name_textcolor_one">#d71470</color>
+	<color name="b0_home_hot_type_name_textcolor_two">#4a70ef</color>
+	<color name="b0_home_hot_type_name_textcolor_three">#fdb73d</color>
+	<color name="b0_home_hot_type_name_textcolor_four">#97bf2b</color>
+	<color name="b0_home_hot_goods_name_textcolor">#909090</color>
+	<color name="b0_The_header_text_color">#e41b25</color>
+	
+	<color name="b0_home_category_goods_name_color_1">#ff7826</color>
+	<color name="b0_home_category_goods_name_color_2">#ff389d</color>
+	<color name="b0_home_category_goods_name_color_3">#0ba504</color>
+	<color name="b0_home_category_goods_name_color_4">#1cbdc5</color>
+	<color name="b0_home_category_goods_name_color_5">#0607dc</color>
+	<color name="b0_home_category_goods_name_color_6">#fd9b00</color>
+	<color name="a0_login_canel">#84878a</color>
+	<color name="h0_submit">#84878a</color>
+	<color name="h0_bg">#fbfbfb</color>
+	<color name="i0_division">#c4c2c2</color>
+	
+	<!-- ZXing -->	  
+	<color name="bg_color">#EDEDED</color>
+  	<color name="contents_text">#ff000000</color>
+  	<color name="encode_view">#ffffffff</color>
+  	<color name="help_button_view">#ffcccccc</color>
+  	<color name="help_view">#ff404040</color>
+  	<color name="possible_result_points">#c0ffff00</color>  
+  	<color name="result_image_border">#ffffffff</color>
+  	<color name="result_minor_text">#ffc0c0c0</color>
+  	<color name="result_points">#c000ff00</color>
+  	<color name="result_text">#ffffffff</color>
+  	<color name="result_view">#b0000000</color>
+  	<color name="sbc_header_text">#ff808080</color>
+  	<color name="sbc_header_view">#ffffffff</color>
+  	<color name="sbc_list_item">#fffff0e0</color>
+  	<color name="sbc_layout_view">#ffffffff</color>
+  	<color name="sbc_page_number_text">#ff000000</color>
+  	<color name="sbc_snippet_text">#ff4b4b4b</color>
+  	<color name="share_text">#ff000000</color>
+  	<color name="share_view">#ffffffff</color>
+  	<color name="status_view">#50000000</color>
+  	<color name="status_text">#ffffffff</color>
+  	<color name="transparent">#00000000</color>
+  	<color name="viewfinder_frame">#ff000000</color>
+  	<color name="viewfinder_laser">#ffff0000</color>
+  	<color name="viewfinder_mask">#60000000</color>
+  	<color name="header">#58567D</color>
+  	<color name="grgray">#686868</color>
+  	<color name="j0_title_view_bg">#f8f8f8</color>
+  	
+    
+    <drawable name="color_b">#44aaaaaa</drawable>
+	<drawable name="color_a">#00000000</drawable>
+	
+	
+	
+	
+	
+	
+</resources>

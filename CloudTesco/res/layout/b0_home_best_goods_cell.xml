@@ -1,0 +1,44 @@
+<com.insthub.ecmobile.component.HomeBestGoodsCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/body_cont_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/b0_The_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"
+                android:paddingTop="8dp"
+                android:text="精品推荐"
+                android:textColor="@color/b0_The_header_text_color"
+                android:textSize="@dimen/b0_The_header_text_size" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/scrollView_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</com.insthub.ecmobile.component.HomeBestGoodsCell>

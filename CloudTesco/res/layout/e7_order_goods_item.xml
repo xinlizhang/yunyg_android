@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:padding="10dp" >
+    
+	<ImageView
+	    android:id="@+id/goods_img" 
+	    android:layout_width="80dp"
+	    android:layout_height="80dp"
+	    android:background="@drawable/default_image"
+	    android:layout_alignParentLeft="true"/>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/goods_img"
+	    android:layout_toLeftOf="@+id/goods_price"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_centerVertical="true"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:id="@+id/goods_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxLines="2"
+	        android:text="阿斯利康的激发我饿哦if奖阿斯利康大家发狂了似的激发了苦涩啊撒旦法而发达科技疯了快减肥哦啊几分快乐的撒"
+	        android:textColor="#000"
+	        android:textSize="16dp"/>
+	    <TextView
+	        android:id="@+id/goods_num" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:textColor="#000"
+	        android:textSize="16dp"
+	        android:text="*1"/>
+	</LinearLayout>
+		
+	<TextView
+	    android:id="@+id/goods_price" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:text="0.00"
+	    android:textColor="#000"
+	    android:textSize="16dp"
+	    android:layout_centerVertical="true"/>
+
+</RelativeLayout>

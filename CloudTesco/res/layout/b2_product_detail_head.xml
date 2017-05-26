@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+  <!--       android:background="@drawable/good_list_bg" -->
+        <com.insthub.BeeFramework.view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+                <!-- 商品图片 -->
+     <!--            <com.external.HorizontalVariableListView.widget.HorizontalVariableListView
+                    android:id="@+id/good_detail_photo_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:layout_below="@+id/text"
+                    android:gravity="bottom|center_vertical"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp" /> -->
+                    
+         
+                <FrameLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                   <android.support.v4.view.ViewPager
+        				android:id="@+id/good_detail_photo_list"
+        		   		android:layout_width="match_parent"
+                   		android:layout_height="182dp"
+                   		android:layout_below="@+id/text"
+                   		android:gravity="bottom|center_vertical"
+                   		android:paddingBottom="0dp"
+                   		android:paddingTop="0dp"/>
+                   
+                   <RelativeLayout 
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tuitional_carousel_active_btn">
+                       <TextView 
+                           android:id="@+id/photopage"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerInParent="true"
+                           android:textColor="#ffffff"
+                           android:textSize="14dp"/>
+                   </RelativeLayout>
+                </FrameLayout>
+   
+				
+                <LinearLayout 
+                    android:id="@+id/good_brief_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- 商品名字 -->
+                	<TextView   
+                    	android:id="@+id/good_brief"
+                    	android:layout_width="match_parent"
+                    	android:layout_height="wrap_content"
+                    	android:layout_gravity="center_vertical"
+                    	android:layout_weight="1"
+                    	android:singleLine="false"
+                    	android:textColor="#333333"
+                    	android:textSize="19dp"
+                    	android:paddingRight="5dp" />
+                	<ImageView 
+                	    android:layout_width="wrap_content"
+                	    android:layout_height="wrap_content"
+                		android:layout_gravity="right|center_vertical"
+          				android:layout_marginRight="25dp"
+                	    android:background="@drawable/accsessory_arrow_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+					<!-- 商品价格 -->
+                    <TextView
+                        android:id="@+id/promote_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="#ff0000" />
+					<!-- 市场价格-->
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/market_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#ff0000"
+                            android:textSize="@dimen/b2_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+				<!-- 特价将于 **** 到期-->
+                <TextView
+                    android:id="@+id/count_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/good_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:lineSpacingExtra="10dp" 
+                    android:textSize="@dimen/b2_text_size"/>
+                
+                <!-- 服务 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/body_cont_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/good_category"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="#333333" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/accsessory_arrow_right" />
+                </LinearLayout>
+                
+                <!-- 送至 -->
+                   <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="送至  :  "
+                        android:textColor="#000000"
+                        android:textSize="@dimen/b2_text_size"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="辽宁省葫芦岛市建昌县."
+                        android:textColor="#000000"
+                        android:textSize="@dimen/b2_text_size"/>
+                </LinearLayout>
+                
+                <!-- 提示 -->
+                 <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务  :  "
+                        android:textColor="#000000"
+                        android:textSize="@dimen/b2_text_size"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="由雲易购发货并提供售后服务."
+                        android:textColor="#000000"
+                        android:textSize="@dimen/b2_text_size"/>
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提示  :  "
+                        android:textColor="#000000"
+                        android:textSize="@dimen/b2_text_size"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支持7天无理由退货"
+                        android:textColor="#6d7daf"
+                        android:textSize="@dimen/b2_text_size"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/body_cont"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/good_basic_parameter"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/gooddetail_parameter"
+                            android:textColor="#333333" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/accsessory_arrow_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e5e5e5" />
+
+                    <LinearLayout
+                        android:id="@+id/goods_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/gooddetail_desc"
+                            android:textColor="#333333" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/accsessory_arrow_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e5e5e5" />
+
+                    <LinearLayout
+                        android:id="@+id/goods_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/gooddetail_commit"
+                            android:textColor="#333333" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/accsessory_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View 
+                	android:layout_width="match_parent"
+                	android:layout_height="@dimen/good_detail_feature_article_height"
+                	android:background="#fff"/>
+            </LinearLayout>
+            
+        </com.insthub.BeeFramework.view.MyScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/good_detail_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000" />
+
+</FrameLayout>

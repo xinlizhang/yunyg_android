@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_view" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/member_login_and_registered_layout_height"
+        android:background="@drawable/a0_login_01" >
+
+        <ImageView
+            android:layout_width="@dimen/head_photo_width"
+            android:layout_height="@dimen/head_photo_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/a0_login_02" />
+    </RelativeLayout>
+    
+    <!-- 输入账户名和密码 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_four_gray_line"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/login_account1"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/passwordtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/login_password1"
+                android:textColor="#000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/submit_the_parameter_error"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e1e1e1" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/Please_enter_password"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 登录按钮 -->
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/a0_login_bg"
+        android:text="@string/login_login"
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="@string/phone_quick_registration"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/retrieve_password"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/Retrieve_password"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

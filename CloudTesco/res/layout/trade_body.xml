@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView 
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ 			android:textSize="15dp"
+ 			android:textColor="#919191"
+ 			android:layout_centerVertical="true"
+ 			android:layout_alignParentLeft="true"/>
+        <TextView 
+            android:id="@+id/order_label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#f22323"
+            android:textSize="15dp"/>
+        
+    </RelativeLayout>
+    
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"/>
+    
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+    	android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/trade_body_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/trade_body_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <!-- <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/trade_body_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/trade_body_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginLeft="10dp"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </FrameLayout> -->
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"/>
+
+    <RelativeLayout
+        android:id="@+id/operation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+        
+        <TextView
+            android:id="@+id/real_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:visibility="gone"            
+            android:textSize="14dp"
+            android:textColor="#000000"/>
+        
+        <Button
+            android:id="@+id/check_logistice"
+            android:layout_width="95dp"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/operation_btn"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_ellipse_bg"
+            android:text="@string/tradeitem_logistics"
+            android:textColor="#f22323"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/operation_btn"
+            android:layout_width="75dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/button_ellipse_bg"
+            android:textColor="#f22323"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>

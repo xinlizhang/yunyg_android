@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_list_bg" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <include
+            android:id="@+id/title_view"
+            android:layout_alignParentTop="true" 
+            layout = "@layout/title_view" />
+        
+        <WebView
+        	android:id="@+id/webview"
+        	android:layout_below="@id/title_view"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layerType="software" />
+        
+      <!--   <com.external.maxwin.view.XListView
+             android:id="@+id/chat_list"
+        	 android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/title_view"
+             android:layout_above="@+id/function_programa"
+             android:background="#e7e8eb"
+             android:divider="#00000000"
+             android:dividerHeight="0dp"/>
+        
+        功能栏
+		<RelativeLayout
+		    android:id="@+id/function_programa"
+		    android:layout_width="wrap_content"
+		    android:layout_height="45dp"
+		    android:paddingTop="2dp"
+		    android:paddingBottom="2dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:layout_alignParentBottom="true"
+		    android:gravity="center_vertical"
+		    android:background="#f8f8f8">
+		    
+		    <FrameLayout
+		        android:id="@+id/expression_keyboard"
+	        	android:layout_marginLeft="5dp"
+	        	android:visibility="gone"
+		        android:layout_width="37dp"
+		        android:layout_height="37dp" >
+		        <Button 
+		        	android:id="@+id/btn_expression"
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:background="@drawable/btn_expression"
+		        	android:layout_alignParentLeft="true"/>
+		    </FrameLayout>
+		    
+		 	<EditText 
+		 	    android:id="@+id/Input"
+		 	    android:layout_width="match_parent"
+		 	    android:layout_height="wrap_content"
+		 	    android:background="@drawable/searcher_new_search_box"
+		 	    android:layout_toRightOf="@+id/expression_keyboard"
+		 	    android:layout_toLeftOf="@+id/send_function"
+		 	    android:layout_marginLeft="5dp"
+		 	    android:layout_marginRight="5dp"
+		 	    android:layout_centerVertical="true"
+		 		android:singleLine="true"
+            	android:textSize="16sp"
+            	android:hint="请输入您想咨询的！"/>
+		 	
+		 	<FrameLayout 
+		 	    android:id="@+id/send_function"
+		 	    android:layout_width="70dp"
+		 	    android:layout_height="37dp"
+		 	    android:layout_marginLeft="5dp"
+		 	    android:layout_alignParentRight="true">
+		 	    <Button 
+		 	        android:id="@+id/send"
+		 	        android:layout_width="wrap_content"
+		 	        android:layout_height="wrap_content"
+		 	        android:background="@drawable/shop_car_remove"
+		 	        android:text="发送"
+		 	        android:textColor="#000"
+		 	       	android:textSize="16dp"/>
+		 	</FrameLayout>
+		    
+		</RelativeLayout>     -->
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/recent_session_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:background="#50000000">
+		<TextView 
+		    android:id="@+id/recent_session_text"
+		    android:layout_width="170dp"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentRight="true"
+		    android:background="#fff"
+		    android:gravity="center"
+		    android:paddingTop="15dp"
+		    android:paddingBottom="10dp"
+		    android:text="最近会话 >"
+		    android:textSize="14dp"
+		    android:textColor="#959595"/>
+        
+		<com.external.maxwin.view.XListView
+             android:id="@+id/recent_session_list"
+        	 android:layout_width="170dp"
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:layout_below="@id/recent_session_text"
+             android:background="#fff"
+             android:divider="#00000000"
+             android:dividerHeight="0dp"/>      
+    </RelativeLayout>
+
+</FrameLayout>

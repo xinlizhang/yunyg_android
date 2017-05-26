@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="104dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="110dp"
+        android:layout_gravity="center"
+        android:src="@drawable/nothere_elated_it" />
+    
+    <TextView
+        android:id="@+id/tip_is_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/there_no_order"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+
+
+</FrameLayout>

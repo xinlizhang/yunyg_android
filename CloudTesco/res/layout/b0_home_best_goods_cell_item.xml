@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/b0_best_sliding_around_width"
+    android:layout_height="205dp"
+    android:background="#ffffff" >
+    
+    
+    <ImageView 
+        android:id="@+id/sell_like_hot_cakes_item_imgview"
+        android:layout_width="@dimen/b0_best_sliding_around_width"
+        android:layout_height="@dimen/b0_best_sliding_around_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="38dp"/>
+
+     <RelativeLayout
+        android:id="@+id/discount_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/promotion1" >
+         <TextView 
+        	 android:id="@+id/discount_number"
+       		 android:layout_width="wrap_content"
+         	 android:layout_height="wrap_content"
+       	 	 android:layout_centerInParent="true"
+       	 	 android:textColor="#ffffff"/>
+    </RelativeLayout> 
+      
+     
+     <TextView
+         android:id="@+id/goods_name" 
+         android:layout_width="@dimen/b0_best_sliding_around_width"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|center_horizontal"
+         android:layout_marginBottom="17dp"
+         android:textColor="@color/b0_home_hot_goods_name_textcolor"
+         android:ellipsize="end"
+         android:singleLine="true"
+         android:maxLines="1"/>
+     
+     
+       <TextView
+         android:id="@+id/goods_price" 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|center_horizontal"
+         android:ellipsize="end"
+         android:singleLine="true"
+         android:textColor="#f11010"
+         android:maxLines="1"/>
+     
+     
+<!--      <View 
+         android:layout_width="1dp"
+         android:layout_height="120dp"
+         android:background="@color/b0_home_hot_divider_color"
+         android:layout_marginRight="1px"
+         android:layout_marginTop="15dp"/> -->
+    
+</FrameLayout>

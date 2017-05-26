@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.insthub.ecmobile.component.PayAreaCell 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageButton
+            android:id="@+id/b0_pay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/payarea0" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:textColor="#898989"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+		android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" >
+        <ImageButton
+            android:id="@+id/b0_logistics_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/payarea1" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流查询"
+            android:textColor="#898989"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" >
+        <ImageButton
+            android:id="@+id/b0_wheater_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_wheater" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气查询"
+            android:textColor="#898989"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+       
+	<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+		android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"  >
+        <ImageButton
+            android:id="@+id/b0_scaner_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ico_scaner" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫一扫"
+            android:textColor="#898989"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+       
+</com.insthub.ecmobile.component.PayAreaCell>

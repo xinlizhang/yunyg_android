@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/order_programa"
+	    android:orientation="vertical">
+	    <include layout="@layout/title_view"/>
+	 	<include layout="@layout/e7_order_details_cell"/>
+	</LinearLayout>
+   
+	<RelativeLayout 
+	    android:id="@+id/order_programa"
+	    android:layout_width="fill_parent"
+	    android:layout_height="65dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_gravity="bottom"
+	    android:background="#eaedf1">
+		<Button 
+		    android:id="@+id/contact_service"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:background="@drawable/kefu"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="35dp"/>
+			    
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:orientation="horizontal"
+		    android:layout_marginRight="5dp">
+		    <Button 
+		        android:id="@+id/order_cancel"
+		        android:layout_width="70dp"
+		        android:layout_height="35dp"
+		        android:text="取消订单"
+		        android:gravity="center"
+		        android:background="@drawable/h0_edittext_bg"
+		        android:textColor="#000"
+		        android:textSize="15dp"/>
+		    <Button 
+		        android:id="@+id/order_pay"
+		        android:layout_width="70dp"
+		        android:layout_height="35dp"
+		        android:text="去支付"
+		        android:layout_marginLeft="10dp"
+		        android:background="@drawable/btn_gobuying"
+		        android:gravity="center"
+		        android:textColor="#fff"
+		        android:textSize="15dp"/>
+		</LinearLayout>
+		
+	</RelativeLayout>
+
+</RelativeLayout>

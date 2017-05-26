@@ -1,0 +1,104 @@
+<resources>
+
+    <dimen name="private_bar_to_border">25.0dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="smaller_txtsize">13px</dimen>
+    <!-- zxf end -->
+
+
+    <dimen name="recomment_margin">2dp</dimen>
+    <dimen name="recomment_textsize">10sp</dimen>
+    <dimen name="recomment_width">26dp</dimen>
+    <dimen name="recomment_height">30dp</dimen>
+
+    <dimen name="price_textsize">11sp</dimen>
+    <dimen name="price_margin">18dp</dimen>
+    <dimen name="price_width">60dp</dimen>
+    <dimen name="price_height">20dp</dimen>
+
+     <!-- 查看大图页面 -->
+    <dimen name="datu_btns_paddingLeft">41px</dimen>
+    <dimen name="datu_btns_paddingRight">41px</dimen>
+    <dimen name="datu_btns_paddingTop">12px</dimen>
+    <dimen name="datu_btns_paddingBottom">2px</dimen>
+    <dimen name="datu_btn_marginLeft">64px</dimen>
+    
+    <dimen name="b0_promte_HorizontalScrollView_height">145dp</dimen>
+    <dimen name="b0_promte_sliding_around_width">100dp</dimen>
+    <dimen name="b0_promte_sliding_around_height">100dp</dimen>
+    
+    <dimen name="b0_best_HorizontalScrollView_height">195dp</dimen>
+    <dimen name="b0_best_sliding_around_width">100dp</dimen>
+    <dimen name="b0_best_sliding_around_height">100dp</dimen>
+    
+    
+    <dimen name="b0_home_hot_type_name_paddingTop">0dp</dimen>
+    <dimen name="b0_home_hot_type_name_paddingleft">5dp</dimen>
+    <dimen name="b0_home_hot_type_name_textsize">14dp</dimen>
+    <dimen name="b0_home_hot_type_name_width">80dp</dimen>
+    
+    <dimen name="b0_home_hot_goods_name_paddingTop">20dp</dimen>
+    <dimen name="b0_home_new_goods_name_paddingTop">25dp</dimen>
+    <dimen name="b0_home_hot_goods_name_textsize">12dp</dimen>
+    <dimen name="b0_home_hot_goods_name_width">100dp</dimen>
+    
+    <dimen name="b0_home_hot_layout_height">90dp</dimen>
+    <dimen name="b0_home_hot_imageView_witch">75dp</dimen>
+    <dimen name="b0_home_hot_imageView_height">75dp</dimen>
+    <dimen name="b0_home_best_layout_height">110dp</dimen>
+    <dimen name="b0_home_best_imageView_witch">75dp</dimen>
+    <dimen name="b0_home_best_imageView_height">80dp</dimen>
+    <dimen name="b0_The_header_text_size">16dp</dimen>
+    <dimen name="b0_limited_time_discount_textsize">13dp</dimen>
+    
+    <dimen name="b0_home_new_type_name_paddingTop">7dp</dimen>
+    
+    <dimen name="b0_home_category_goods_paddingTop">5dp</dimen>
+    <dimen name="b0_home_category_goods_paddingLeft">8dp</dimen>
+    <dimen name="b0_home_category_goods_paddingRight">8dp</dimen>
+    <dimen name="b0_home_category_goods_margin_text">5dp</dimen>
+    <dimen name="b0_home_new_shop_price_textsize">14dp</dimen>
+    
+    <dimen name="b0_home_new_the_header_name_width">95dp</dimen>
+    <dimen name="b0_home_new_the_header_name_height">110dp</dimen>
+    <dimen name="b0_home_new_type_name_width">80dp</dimen>
+    <dimen name="b0_home_new_shop_price_layout_marginLeft">30dp</dimen>
+    <dimen name="b0_home_new_shop_price_layout_marginBottom">15dp</dimen>
+    
+    
+    <dimen name="b0_home_category_goods_layout_height">130dp</dimen>
+    <dimen name="b0_home_category_goods_img_width">95dp</dimen>
+    <dimen name="b0_home_category_goods_img_height">95dp</dimen>
+    
+    <dimen name="b1_promote_goods_list_item_height">110dp</dimen>
+    <dimen name="b1_promote_goods_list_item_img_width">100dp</dimen>
+    <dimen name="b1_promote_goods_list_item_img_height">100dp</dimen>
+    
+    <dimen name="good_detail_feature_article_height">45dp</dimen>
+    <dimen name="login_registered_layout_height">45dp</dimen>
+    
+    <dimen name="b2_text_size">14dp</dimen>
+    <dimen name="text_mid_size">14sp</dimen>
+    
+    <dimen name="head_photo_width">90dp</dimen>
+    <dimen name="head_photo_height">90dp</dimen>
+    <dimen name="bit_height">45dp</dimen>
+    <dimen name="e0_profile_head_height">50dp</dimen>
+    <dimen name="e0_profile_head_interval">12dp</dimen>
+    <dimen name="e0_profile_icon_marginleft">20dp</dimen>
+    <dimen name="e0_profile_text_marginleft">10dp</dimen>
+    <dimen name="e0_profile_icon_width">20dp</dimen>
+    <dimen name="e0_profile_icon_height">20dp</dimen>
+    
+    <dimen name="i0_item_height">50dp</dimen>
+    <dimen name="i0_item_text_size">16dp</dimen>
+    
+    <dimen name="member_signin_label_htight">45dp</dimen>
+    <dimen name="member_login_and_registered_layout_height">115dp</dimen>
+    
+    
+    
+</resources>

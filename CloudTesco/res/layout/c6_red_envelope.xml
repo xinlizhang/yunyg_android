@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_view" /> 
+
+    <com.external.maxwin.view.XListView
+        android:id="@+id/red_packet_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/body_cont_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/body_cont"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/red_paper_input"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/redpaper_input"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

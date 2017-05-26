@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/top_view" /> -->
+
+    <include
+        android:id="@+id/layout_title" 
+        layout="@layout/title_view" />
+    
+     <LinearLayout
+        android:id="@+id/submit_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/good_detail_feature_article_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <Button 
+            android:id="@+id/accounts_payable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:background="@drawable/good_detail_feature_article_bg"/>
+        
+        <!-- 立即购买   -->
+        <Button 
+            android:id="@+id/balance_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="#f15353"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/balance_submit"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+      </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_above="@+id/submit_bar"
+        android:background="@drawable/body" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" >
+
+            <!-- 收货地址 -->
+
+            <LinearLayout
+                android:id="@+id/balance_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_checkout_color"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/address_name_icon" />
+
+                    <TextView
+                        android:id="@+id/balance_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/xiaobing_register_phone_icon" />
+
+                    <TextView
+                        android:id="@+id/balance_phoneNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxLines="2"
+                        android:textColor="#a3a3a3"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cire_zhe_money"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:text="默认"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/balance_address"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+            
+			 <!-- 商品 -->
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp">
+			     <LinearLayout
+                    android:id="@+id/balance_body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+			</LinearLayout>
+               
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/balance_pay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/balance_pay"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shopping_checkout_required_bg"
+                        android:gravity="center"
+                        android:text="@string/required"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/balance_pay_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="#a3a3a3"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/accsessory_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#c4c4c4" />
+
+                <LinearLayout
+                    android:id="@+id/balance_dis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/balance_shipping"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shopping_checkout_required_bg"
+                        android:gravity="center"
+                        android:text="@string/required"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/balance_dis_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="#a3a3a3"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/accsessory_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#c4c4c4" />
+
+                <LinearLayout
+                    android:id="@+id/balance_invoice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/balance_bill"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/balance_invoice_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#a3a3a3"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/accsessory_arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/balance_goods"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/balance_list"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/balance_goods_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="4件"
+                        android:textColor="#a3a3a3"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/accsessory_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#c4c4c4"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/balance_redPaper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_balance_redPaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/balance_redpocket"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/balance_redPaper_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#a3a3a3"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/arrow_balance_redpocket"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/accsessory_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#c4c4c4" />
+
+                <LinearLayout
+                    android:id="@+id/balance_score"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_balance_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/balance_exp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/balance_score_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#a3a3a3"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/arrow_balance_score"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/accsessory_arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="@string/balance_redpocket"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/balance_bonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="-￥0.00"
+                        android:textColor="#ff0000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="@string/balance_exp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/balance_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="-￥0.00"
+                        android:textColor="#ff0000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+                
+                  <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="@string/shipping_fee"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/balance_fees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="￥0.00"
+                        android:textColor="#ff0000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+        <!--     <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:background="@drawable/shopping_cart_body_bg_02"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/balance_rental"
+                        android:textColor="#939393"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/balance_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥132000"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/balance_submit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/button_red" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/shopping_checkout_sub_order_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:text="@string/balance_submit"
+                        android:textColor="#f3f3f3"
+                        android:textSize="18dp" />
+                </FrameLayout>
+            </LinearLayout> -->
+        </LinearLayout>
+    </ScrollView>
+    
+     
+    
+</RelativeLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.insthub.ecmobile.component.HomeHotGoodsCell 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/body_cont_bg"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/b0_The_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"
+            android:text="热门商品"
+            android:textColor="@color/b0_The_header_text_color"
+            android:textSize="@dimen/b0_The_header_text_size"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+ <!--        <LinearLayout
+            android:layout_weight="1" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/b0_home_hot_type_name_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摩托车"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_one"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大阳摩托ST80"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+             <ImageView 
+                android:id="@+id/b0_home_hot_img_one"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+                android:layout_height="@dimen/b0_home_hot_imageView_height"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true" 
+                android:layout_gravity="right" />
+        </LinearLayout> -->
+        
+        
+        <FrameLayout 
+            android:id="@+id/b0_home_hot_layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b0_home_hot_layout_height"
+            android:layout_weight="1">
+            <ImageView 
+                android:id="@+id/b0_home_hot_img_one"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+                android:layout_height="@dimen/b0_home_hot_imageView_height"
+                android:layout_gravity="right|bottom"/>
+            <TextView 
+                android:id="@+id/b0_home_hot_type_name_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="摩托车"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_one"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_one"
+                android:layout_width="@dimen/b0_home_hot_goods_name_width"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="大阳摩托ST80"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+        </FrameLayout> 
+        <View 
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/b0_home_hot_divider_color"/>
+        
+    <!--     <LinearLayout
+            android:layout_weight="1" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/b0_home_hot_type_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="爱。健康"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_two"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无激素健康药"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+                 <ImageView 
+                android:id="@+id/b0_home_hot_img_two"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+      			android:layout_height="@dimen/b0_home_hot_imageView_height"
+      			android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true" 
+                android:layout_gravity="right"/>
+            
+        </LinearLayout> -->
+        
+    <FrameLayout 
+        	android:id="@+id/b0_home_hot_layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b0_home_hot_layout_height"
+            android:layout_weight="1">
+            <ImageView 
+                android:id="@+id/b0_home_hot_img_two"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+      			android:layout_height="@dimen/b0_home_hot_imageView_height"
+      			android:layout_gravity="right|bottom"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_type_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="爱。健康"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_two"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_two"
+                android:layout_width="@dimen/b0_home_hot_goods_name_width"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="无激素健康药"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+        </FrameLayout> 
+    </LinearLayout>
+    
+     <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b0_home_hot_divider_color"/>
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff">
+        
+       <!--  <LinearLayout
+            android:layout_weight="1" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/b0_home_hot_type_name_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="爽口一下"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_three"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东北人的好酒"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <ImageView 
+                android:id="@+id/b0_home_hot_img_three"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+      			android:layout_height="@dimen/b0_home_hot_imageView_height"
+      			android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true" 
+                android:layout_gravity="right"/>
+        </LinearLayout> -->
+        
+   <FrameLayout 
+       		android:id="@+id/b0_home_hot_layout_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b0_home_hot_layout_height"
+            android:layout_weight="1">
+            <ImageView 
+                android:id="@+id/b0_home_hot_img_three"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+                android:layout_height="@dimen/b0_home_hot_imageView_height"
+                android:layout_gravity="right|bottom"/>
+            <TextView 
+                android:id="@+id/b0_home_hot_type_name_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="爽口一下"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_three"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_three"
+                android:layout_width="@dimen/b0_home_hot_goods_name_width"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="东北人的好酒"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+        </FrameLayout> 
+        <View 
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/b0_home_hot_divider_color"/>
+        
+        
+    <!--     <LinearLayout
+            android:layout_weight="1" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <TextView 
+                android:id="@+id/b0_home_hot_type_name_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="朝阳家电"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_four"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="精选家电组合"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            <ImageView 
+                android:id="@+id/b0_home_hot_img_four"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+      			android:layout_height="@dimen/b0_home_hot_imageView_height"
+      			android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true" 
+                android:layout_gravity="right"/>
+            
+        </LinearLayout>
+         -->
+     <FrameLayout 
+         android:id="@+id/b0_home_hot_layout_four"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b0_home_hot_layout_height"
+            android:layout_weight="1">
+            <ImageView 
+                android:id="@+id/b0_home_hot_img_four"
+                android:layout_width="@dimen/b0_home_hot_imageView_witch"
+                android:layout_height="@dimen/b0_home_hot_imageView_height"
+                android:layout_gravity="right|bottom"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_type_name_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="朝阳家电"
+                android:textColor="@color/b0_home_hot_type_name_textcolor_four"
+                android:textSize="@dimen/b0_home_hot_type_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_type_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+            
+            <TextView 
+                android:id="@+id/b0_home_hot_goods_name_four"
+                android:layout_width="@dimen/b0_home_hot_goods_name_width"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="精选家电组合"
+                android:textColor="@color/b0_home_hot_goods_name_textcolor"
+                android:textSize="@dimen/b0_home_hot_goods_name_textsize"
+                android:paddingTop="@dimen/b0_home_hot_goods_name_paddingTop"
+                android:paddingLeft="@dimen/b0_home_hot_type_name_paddingleft"/>
+        </FrameLayout>
+    </LinearLayout>
+ 
+</com.insthub.ecmobile.component.HomeHotGoodsCell>
