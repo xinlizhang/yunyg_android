@@ -118,7 +118,7 @@ public class HomeHotGoodsCell extends LinearLayout
   		String netType = shared.getString("netType", "wifi");
   		b0_The_header_name.setText("热门商品");
 		if(cellData.size() > 0){
-			for (int j = 0; j < 4; j++) {
+			for (int j = 0; j < cellData.size() && j < 4; j++) {
 				if(cellData.get(j) != null /*&& cellData.get(j).goods != null*/){
 					b0_home_hot_img[j].setVisibility(View.VISIBLE);
 					b0_home_hot_type_name[j].setVisibility(View.VISIBLE);

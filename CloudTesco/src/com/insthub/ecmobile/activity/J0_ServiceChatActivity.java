@@ -127,9 +127,9 @@ public class J0_ServiceChatActivity extends BaseActivity implements BusinessResp
 			RECENTSESSION MRECENTSESSION = new RECENTSESSION();
 			MRECENTSESSION.name = "ë…Ò×¹ºÆì½¢µê";
 			PHOTO photo = new PHOTO();
-			photo.url = "http://www.zhangxinli.com.cn/yunyigou/images/201505/source_img/87_G_1431635977982.jpg";
-			photo.small = "http://www.zhangxinli.com.cn/yunyigou/images/201505/source_img/87_G_1431635977982.jpg";
-			photo.thumb = "http://www.zhangxinli.com.cn/yunyigou/images/201505/source_img/87_G_1431635977982.jpg";
+			photo.url = "http://www.disanqiche.com/yunyigou/images/201505/source_img/87_G_1431635977982.jpg";
+			photo.small = "http://www.disanqiche.com/yunyigou/images/201505/source_img/87_G_1431635977982.jpg";
+			photo.thumb = "http://www.disanqiche.com/yunyigou/images/201505/source_img/87_G_1431635977982.jpg";
 			MRECENTSESSION.img = photo;
 			recent_session_list.add(MRECENTSESSION);
 		}

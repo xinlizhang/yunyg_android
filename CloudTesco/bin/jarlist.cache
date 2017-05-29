@@ -1,8 +1,9 @@
 # cache for current jar dependency. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1420443984000 279781 d6364bcc1b2b2aa69d008602d36a700453648560 E:\work\Hisproject\proj_yunyigou\android\project\AndroidSDK\libs\commons-httpclient-3.0.1.jar
-1420443984000 279781 d6364bcc1b2b2aa69d008602d36a700453648560 E:\work\Hisproject\proj_yunyigou\android\project\CloudTesco\libs\commons-httpclient-3.0.1.jar
-1428371792248 758727 efec67655f6db90757faa37201efcee2a9ec3507 E:\work\Hisproject\proj_yunyigou\android\project\CloudTesco\libs\android-support-v4.jar
-1427178543743 758727 efec67655f6db90757faa37201efcee2a9ec3507 E:\work\Hisproject\proj_yunyigou\android\project\appcompat_v7\libs\android-support-v4.jar
-1420443984000 648327 ded9acc6a9792b8f1afc470f0c9cd36d178914cd E:\work\Hisproject\proj_yunyigou\android\project\alipay_lib\libs\android-support-v4.jar
+1495766641000 279781 d6364bcc1b2b2aa69d008602d36a700453648560 /Users/zhangxinli/Documents/Projects/yunyg_android/CloudTesco/libs/commons-httpclient-3.0.1.jar
+1495766641000 279781 d6364bcc1b2b2aa69d008602d36a700453648560 /Users/zhangxinli/Documents/Projects/yunyg_android/AndroidSDK/libs/commons-httpclient-3.0.1.jar
+1495766641000 648327 ded9acc6a9792b8f1afc470f0c9cd36d178914cd /Users/zhangxinli/Documents/Projects/yunyg_android/EventBus/EventBus/libs/android-support-v4.jar
+1495766641000 758727 efec67655f6db90757faa37201efcee2a9ec3507 /Users/zhangxinli/Documents/Projects/yunyg_android/CloudTesco/libs/android-support-v4.jar
+1495766641000 648327 ded9acc6a9792b8f1afc470f0c9cd36d178914cd /Users/zhangxinli/Documents/Projects/yunyg_android/alipay_lib/libs/android-support-v4.jar
+1495766641000 758727 efec67655f6db90757faa37201efcee2a9ec3507 /Users/zhangxinli/Documents/Projects/yunyg_android/appcompat_v7/libs/android-support-v4.jar

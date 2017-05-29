@@ -479,7 +479,8 @@ public class C1_CheckOutActivity extends BaseActivity implements OnClickListener
                         {
                             if (0 == order_info.pay_code.compareTo("alipay"))
                             {
-                                showAlipayDialog();
+//                                showAlipayDialog();
+                            	orderModel.orderPay(Integer.parseInt(order_info.order_id));
                             }else if(0==order_info.pay_code.compareTo("upop")){
                                 orderModel.orderPay(Integer.parseInt(order_info.order_id));
                             }else if(0==order_info.pay_code.compareTo("tenpay")){

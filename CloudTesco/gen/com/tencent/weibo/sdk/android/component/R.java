@@ -8,28 +8,28 @@ package com.tencent.weibo.sdk.android.component;
 
 public final class R {
 	public static final class drawable {
-		public static final int dingwei_icon2x = 0x7f02008c;
-		public static final int ic_launcher = 0x7f0200a1;
+		public static final int dingwei_icon2x = 0x7f0200b7;
+		public static final int ic_launcher = 0x7f0200df;
 	}
 	public static final class id {
-		public static final int add = 0x7f0801c0;
-		public static final int authorize = 0x7f0801bf;
-		public static final int commoninterface = 0x7f0801c2;
-		public static final int exit = 0x7f0801c3;
-		public static final int readd = 0x7f0801c1;
+		public static final int add = 0x7f0a0275;
+		public static final int authorize = 0x7f0a0274;
+		public static final int commoninterface = 0x7f0a0277;
+		public static final int exit = 0x7f0a0278;
+		public static final int readd = 0x7f0a0276;
 	}
 	public static final class layout {
-		public static final int main_layout = 0x7f030076;
+		public static final int main_layout = 0x7f03009a;
 	}
 	public static final class string {
-		public static final int add = 0x7f050002;
-		public static final int app_name = 0x7f050000;
-		public static final int authorize = 0x7f050001;
-		public static final int common = 0x7f050004;
-		public static final int delauthorize = 0x7f050005;
-		public static final int readd = 0x7f050003;
+		public static final int add = 0x7f0b000f;
+		public static final int app_name = 0x7f0b000d;
+		public static final int authorize = 0x7f0b000e;
+		public static final int common = 0x7f0b0011;
+		public static final int delauthorize = 0x7f0b0012;
+		public static final int readd = 0x7f0b0010;
 	}
 	public static final class style {
-		public static final int AppTheme = 0x7f060000;
+		public static final int AppTheme = 0x7f0c008b;
 	}
 }

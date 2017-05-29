@@ -169,7 +169,8 @@ public class E7_OrderDetailsActivity extends BaseActivity implements BusinessRes
                     {
                         if (0 == order.order_info.pay_code.compareTo("alipay"))
                         {
-                            showAlipayDialog();
+//                            showAlipayDialog();
+                        	orderModel.orderPay(Integer.parseInt(order.order_info.order_id));
                         }else if(0 == order.order_info.pay_code.compareTo("upop")){
                             orderModel.orderPay(  Integer.parseInt(order.order_info.order_id));
                         }else if(0 == order.order_info.pay_code.compareTo("tenpay")){

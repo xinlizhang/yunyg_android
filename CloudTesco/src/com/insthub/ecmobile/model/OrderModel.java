@@ -171,7 +171,7 @@ public class OrderModel extends BaseModel {
 
                     if (jo != null) {
                         pay_online = response.data.pay_online;
-                        pay_wap = response.data.pay_wap;
+//                        pay_wap = response.data.pay_wap;
                         upop_tn = response.data.upop_tn;
                         OrderModel.this.OnMessageResponse(url, jo, status);
                     }
